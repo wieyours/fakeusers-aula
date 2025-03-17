@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    text-align: center;
+    color:black;
+}
+
+.formUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.allUser{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.user{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 10px;
+    width: 200px;
+    /*background-color: white;*/
+}
+
+.user img{
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column; /*ficar em coluna*/
+    background-color: white;
+}
+
+

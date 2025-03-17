@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de FakeUser</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>GERADOR DE FAKEUSER</h1>
+<div class="formUser">
+
+        <span><b>Gênero: </b></span>
+        <input value="" type="radio" name="gender" checked /> Aleatório
+        <input value="male" type="radio" name="gender" /> Homem
+        <input value="female" type ="radio" name="gender" /> Mulher
+    
+        <span><b>Nacionalidade: </b></span>
+        <select id="natUsers">
+          <option value="br">Brasil</option>
+          <option value="us">Estados Unidos</option>
+          <option value="fr">França</option>
+          <option value="es">Espanha</option>
+        </select>
+
+        <span><b>Quantidade: </b></span>
+        <select id="quantUsers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+    <button onclick ="generateFakerUsers()">Gerar usuário</button>
+</div>
+    <hr>
+    <div class="allUser">
+        <div class="user">
+          <img src="imagens/rose.jpg" height="70" width="70" />
+        <div class="info">
+            <span><b>Nome:</b> Rosé</span>
+            <span><b>Email:</b> rose.blackpink@ygfamily.com</span>
+        </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
+ <!-- <span><b>Nascimento:</b> 11/02/1997</span>
+            <span><b>Estado:</b> Auckland</span>
+            <span><b>Cidade:</b> Nova Zelândia</span>
+            <span><b>Telefone:</b> (88)993134586</span> -->
