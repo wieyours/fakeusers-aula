@@ -133,17 +133,17 @@ A API utilizada para geração de usuários fictícios foi é a [https://randomu
 ```
 
 ## Funcionalidades
-- [ x ] Filtro de usuários pelo gênero
-- [ x ] Filtro de usuários pela nacionalidade
-- [ x ] Filtro de usuários pela quantidade
-- [  ] Mostrar mais informações do usuário
+- [x] Filtro de usuários pelo gênero
+- [x] Filtro de usuários pela nacionalidade
+- [x] Filtro de usuários pela quantidade
+- [ ] Mostrar mais informações do usuário
    - [ ] País
    -  [ ] Estado
    -  [ ] Cidade
    -  [ ] Telefone
-- [   ] Responsividade da tela
-- [   ] Aumentar o filtro da quantidade de usuários
-- [   ] Colocar mais opções de países
+- [ ] Responsividade da tela
+- [ ] Aumentar o filtro da quantidade de usuários
+- [ ] Colocar mais opções de países
 
 ## Contatos
 Email: laisccastroc2023@gmail.com
