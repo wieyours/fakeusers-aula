@@ -26,10 +26,13 @@ async function generateFakerUsers() {
         <img 
         src=${user.picture.medium} height="70" width="70">
         <div class="info">
-            <span><b>Nome:</b> ${user.name.first + " " + user.name.last}</span>
-            <span><b>Email:</b> ${user.email}</span>
-        </div>`;
+            <span><b>Nome: </b>${user.name.first + " " + user.name.last}</span>
+            <span><b>Email: </b>${user.email}</span>
+            <span><b>País: </b>${user.location.country}</span>
+            <span><b>Cidade: </b>${user.location.city}</span>
+            <span><b>Aniversário: </b>${user.dob.date}</span>
     
+            </div>`;   
         document.querySelector(".allUser").appendChild(userDiv);
     }
 }
