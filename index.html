@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="top-section">
     <title>Gerador de FakeUser</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>GERADOR DE FAKEUSER</h1>
-<div class="formUser">
-
-        <span><b>Gênero: </b></span>
-        <input value="" type="radio" name="gender" checked /> Aleatório
+    <header><h1>GERADOR DE FAKEUSER</h1>
+    <div class="formUser">
+      <div class="gender-options">
+          <span><b>Gênero: </b></span>
+          <label><input value="" type="radio" name="gender" checked /> <span class="gender-text">Aleatório</span></label>
+          <label><input value="male" type="radio" name="gender" /> <span class="gender-text">Homem</span></label>
+          <label><input value="female" type="radio" name="gender" /> <span class="gender-text">Mulher</span></label>
+      </div>
+  
+       <!-- <label><input value="" type="radio" name="gender" checked /> Aleatório</label>
         <input value="male" type="radio" name="gender" /> Homem
-        <input value="female" type ="radio" name="gender" /> Mulher
-    
+        <input value="female" type ="radio" name="gender" /> Mulher-->
+        <div class="nacio-quant">
         <span><b>Nacionalidade: </b></span>
         <select id="natUsers">
           <option value="br">Brasil</option>
           <option value="us">Estados Unidos</option>
           <option value="fr">França</option>
           <option value="es">Espanha</option>
+          <option value="de">Alemanha</option>
+          <option value="ch">Suiça</option>
+          <option value="mx">México</option>
+          
         </select>
+    
+        
 
         <span><b>Quantidade: </b></span>
         <select id="quantUsers">
@@ -29,23 +41,30 @@
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
         </select>
     <button onclick ="generateFakerUsers()">Gerar usuário</button>
 </div>
+</div>
+</div>
+</header>
     <hr>
+
     <div class="allUser">
         <div class="user">
           <img src="imagens/rose.jpg" height="70" width="70" />
         <div class="info">
-            <span><b>Nome:</b> Rosé</span>
-            <span><b>Email:</b> rose.blackpink@ygfamily.com</span>
-        </div>
+            <span><b>Nome: </b>Rosé</span>
+            <span><b>Email: </b> rose.blackpink@ygfamily.com</span>
+            <span><b>País: </b> Nova Zelândia</span>
+            <span><b>Cidade: </b> Auckland</span>
+            <span><b>Aniversário: </b>1997/02/11 </span>
+          </div>
         </div>
     </div>
     <script src="code.js"></script>
 </body>
 </html>
- <!-- <span><b>Nascimento:</b> 11/02/1997</span>
-            <span><b>Estado:</b> Auckland</span>
-            <span><b>Cidade:</b> Nova Zelândia</span>
-            <span><b>Telefone:</b> (88)993134586</span> -->
