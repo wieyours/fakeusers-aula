@@ -1,48 +1,230 @@
+/*colocar mais países, alterar o github*/
 *{
-    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-h1{
+
+
+body {
+    background-image: url('imagens/pessoas.jpg');
+    background-size: auto;
+    background-image: linear-gradient(45deg, #228B22  0%, #AFE1AF 100%);
+    width: 100%;
+    opacity:  5;
+	height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 0;
+}
+
+header h1{
+    padding: 20px;
+    color: white;
+    text-shadow: 100px;
+}
+
+header{
+    width: 100%;
+    font-size: 15px;
+    background-color: #228B22;
+    padding: 2rem;
     text-align: center;
-    color:black;
+    margin: 0;
+}
+
+.nacio-quant{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+
+}
+
+.gender-options {
+    display: flex;
+    flex-direction: row; /* Para alinhar lado a lado */
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Para permitir quebra em telas menores */
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre a bolinha e o texto */
+    cursor: pointer;
+}
+
+.gender-text {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 7px solid white;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #228B22;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .formUser{
+    padding: 5px;
+    border-radius: 10px;
+    white-space: normal;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 8px;   
+    background-color: #AFE1AF;
+    border: none;
+    margin: 0;
+
 }
 
 .allUser{
+    padding: 15px;
     display: flex;
-    justify-self: center;
+    border-radius: 300px;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
-}
+    white-space: normal;
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
 
-.user{
+}
+.user {
+    background-color: #AFE1AF;
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; /* Para compatibilidade com navegadores antigos */
+    white-space: normal; /* Permite quebras de linha automáticas */
     display: flex;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 5px black;
     border-radius: 5px;
     padding: 15px;
     gap: 10px;
-    width: 200px;
-    /*background-color: white;*/
+    width: calc(25% - 10px);
+    max-width: 100%; /* Para evitar estouro de conteúdo */
+    box-sizing: border-box; /* Garante que padding e borda estejam dentro da largura */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: #AFE1AF;
+    width: 100%; /* Garante que a info fique contida no card */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+span {
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .user img{
     border-radius: 50%;
 }
 
-.info{
-    display: flex;
-    flex-direction: column; /*ficar em coluna*/
-    background-color: white;
+
+
+@media (max-width: 1024px) {
+    .formUser {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .formUser input,
+    .formUser select,
+    .formUser button {
+        width: 100%;
+    }
 }
 
+@media (max-width: 768px) {
+    .user {
+        width: calc(50% - 10px);
+    }
 
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .user {
+        width: 50%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .formUser {
+        padding: 10px;
+        gap: 0.5rem;
+        
+   }
+
+    span{
+        font-size: 16px;
+        display: flex;
+
+   }
+
+   .formUser-text label {
+    font-size: 16px;
+    color: #333; 
+    width: 100%;
+
+}
+
+   .formUser input{
+    display: flex;
+    width: 40%;
+    margin-top: -5%;
+    
+   }
+
+   
+    .formUser select {
+        width: 20%;
+        
+    }
+   
+    .formUser button {
+        font-size: 12px;
+        width: 30%;
+        
+    }
+}
